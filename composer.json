@@ -1,0 +1,21 @@
+{
+  "name": "jrsaunders/fixerexchangerates",
+  "description": "Apply and Use up to date exchange rates from FIXER.IO",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "John Saunders",
+      "email": "john@yettimedia.co.uk"
+    }
+  ],
+  "require": {
+    "php": ">=5.3",
+    "jrsaunders/quickcache": "^1.0.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "DivaExchangeRates\\": "src/"
+    }
+  }
+}
