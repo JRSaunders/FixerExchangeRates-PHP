@@ -119,7 +119,7 @@ class Query {
 				$finalToCurrency = $toCurrencyDefault;
 			}
 		}
-		$url = 'https://api.fixer.io/latest';
+		$url = 'http://api.fixer.io/latest';
 
 		$this->url    = $url."?base=" . $finalFromCurrency . "&symbols=" . $finalToCurrency;
 
@@ -134,6 +134,7 @@ class Query {
 		$this->buildQuery( $fromCurrency, $toCurrency );
 		$url           = $this->getUrl();
 		$rawData       = $this->curl( $url );
+
 		$this->rawData = $rawData;
 
 		return $this;
