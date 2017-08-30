@@ -4,7 +4,7 @@ namespace FixerExchangeRates;
 
 /**
  * Class Query
- * @package ExchangeRates
+ * @package FixerExchangeRates
  */
 class Query {
 

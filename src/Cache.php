@@ -5,7 +5,7 @@ use QuickCache\Cache as QuickCache;
 
 /**
  * Class Cache
- * @package ExchangeRates
+ * @package FixerExchangeRates
  */
 class Cache extends QuickCache
 {

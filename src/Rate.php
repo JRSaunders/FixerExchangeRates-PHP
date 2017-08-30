@@ -4,7 +4,7 @@ namespace FixerExchangeRates;
 
 /**
  * Class Rate
- * @package ExchangeRates
+ * @package FixerExchangeRates
  */
 class Rate {
 	protected $query;

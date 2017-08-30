@@ -1,9 +1,9 @@
 <?php
-
 namespace FixerExchangeRates;
+
 /**
  * Class Conversion
- * @package ExchangeRates
+ * @package FixerExchangeRates
  */
 class Conversion {
 	/**

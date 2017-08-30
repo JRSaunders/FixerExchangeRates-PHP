@@ -4,7 +4,7 @@ namespace FixerExchangeRates;
 
 /**
  * Class RateQuery
- * @package ExchangeRates
+ * @package FixerExchangeRates
  */
 class RateQuery extends Rate
 {

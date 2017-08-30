@@ -3,7 +3,7 @@ namespace FixerExchangeRates;
 
 /**
  * Class CurrencyCodes
- * @package ExchangeRates
+ * @package FixerExchangeRates
  */
 class CurrencyCodes
 {
