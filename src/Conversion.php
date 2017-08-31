@@ -42,6 +42,13 @@ class Conversion {
 	}
 
 	protected function init( $fromCurrency, $toCurrency, $value, $ttl = 86400, $old = false ) {
+
+		if($fromCurrency==$toCurrency){
+			$this->rate = 1;
+			$this->value = $value;
+			return;
+		}
+
 		$this->cache   = new Cache();
 		$cacheFilename = $fromCurrency . $toCurrency . '-fixerratedata';
 		if ( $old ) {
