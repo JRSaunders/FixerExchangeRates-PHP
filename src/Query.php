@@ -119,9 +119,9 @@ class Query {
 				$finalToCurrency = $toCurrencyDefault;
 			}
 		}
-		$url = 'http://api.fixer.io/latest';
+		$url = 'https://data.fixer.io/api/latest';
 
-		$this->url    = $url."?base=" . $finalFromCurrency . "&symbols=" . $finalToCurrency;
+		$this->url = $url . "?access_key=" . AccessKey::getAccessKey() . "&base=" . $finalFromCurrency . "&symbols=" . $finalToCurrency;
 
 		return $this;
 	}
@@ -132,8 +132,8 @@ class Query {
 	 */
 	public function execute( $fromCurrency = false, $toCurrency = false ) {
 		$this->buildQuery( $fromCurrency, $toCurrency );
-		$url           = $this->getUrl();
-		$rawData       = $this->curl( $url );
+		$url     = $this->getUrl();
+		$rawData = $this->curl( $url );
 
 		$this->rawData = $rawData;
 
